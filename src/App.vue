@@ -23,8 +23,8 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn href="https://fitbark.vercel.app" target="_blank" text>
-        <span class="mr-2">FitBark</span>
+      <v-btn href="https://fitpet.vercel.app" target="_blank" text>
+        <span class="mr-2">FitPet</span>
         <!-- <v-icon>mdi-open-in-new</v-icon> -->
       </v-btn>
     </v-app-bar>
