@@ -65,54 +65,6 @@
         </v-card>
 
         <v-card
-          class="mx-auto mt-4"
-          color="grey lighten-4"
-          max-width="600"
-          width="100%"
-        >
-          <v-card-title>
-            <v-icon
-              :color="checking ? 'red lighten-2' : 'pink accent-3'"
-              class="mr-12"
-              size="64"
-              @click="takePulse"
-            >
-              mdi-thermometer
-            </v-icon>
-            <v-row align="start">
-              <div class="text-caption grey--text text-uppercase">
-                Temperature
-              </div>
-              <div>
-                <span
-                  class="text-h3 font-weight-black"
-                  v-text="Math.round((avg / 2.59) * 10) / 10 || '—'"
-                ></span>
-                <strong v-if="avg">⁰C</strong>
-              </div>
-            </v-row>
-
-            <v-spacer></v-spacer>
-
-            <v-btn icon class="align-self-start" size="28">
-              <v-icon>mdi-arrow-right-thick</v-icon>
-            </v-btn>
-          </v-card-title>
-
-          <v-sheet color="transparent">
-            <v-sparkline
-              :key="String(avg)"
-              :smooth="16"
-              :gradient="['#f72047', '#ffd200', '#1feaea']"
-              :line-width="3"
-              :value="heartbeats"
-              auto-draw
-              stroke-linecap="round"
-            ></v-sparkline>
-          </v-sheet>
-        </v-card>
-
-        <v-card
           class="mx-auto mt-2"
           color="grey lighten-4"
           max-width="600"
